@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    color: white;
+    box-sizing: border-box;
+    /* font-size: 1rem;
+    line-height: 1.5; */
+}
+
+:root{
+    --pozadina: #f4f4f4;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+body
+{
+    background-color: var(--pozadina);
+}
+
+header{
+    display: flex;
+    background-color: #35424a;
+    height: 4em;
+    max-height: 4em;
+    max-width:100%;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5em 0 5em;
+    border-bottom: #e8491d 3px solid;
+}
+
+.algebra_logo{
+    max-height: 4em;
+    max-width:10em;
+    margin-bottom: 1.5em;
+}
+
+nav{
+    color: white;
+}
+
+nav > ul{
+    list-style-type: none;
+}
+
+.naranca{
+    text-decoration: none;
+    padding: 0.5em;
+    color: white;
+}
+.naranca:hover{
+    color: #e8491d;
+}
+
+.orange{
+    color: #e8491d;
+}
+
+/* .first-section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    background-image: url("images/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg");
+    background-position: center;
+    height: 35em;
+    max-height: 35em;
+    background-size: cover;
+} */
+
+#showcase{
+    min-height: 35em;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("images/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1{
+    font-size: 5em;
+    margin-bottom: 0em;
+    margin-top: 0;
+}
+
+section p{
+    font-size: 1.2em;
+}
+
+#newsletter{
+    background-color: #35424a;
+}
+
+#newsletter .container{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.btn1{
+    background-color: #e8491d;
+    border: 0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#newsletter input[type="email"]{
+    outline: none;
+    width: 15rem;
+}
+
+input[type="email"]::placeholder{
+    color: black;
+}
