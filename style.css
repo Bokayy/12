@@ -2,10 +2,20 @@
     padding: 0;
     margin: 0;
     font-family: Poppins;
-    color: white;
-    box-sizing: border-box;
+    /* color: white; */
+    /* box-sizing: border-box; */
     /* font-size: 1rem;
     line-height: 1.5; */
+}
+
+html{
+height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 :root{
@@ -120,4 +130,104 @@ section p{
 
 input[type="email"]::placeholder{
     color: black;
+}
+
+#tehnologije{
+    display: flex;
+    flex-direction: row;
+}
+
+#tehnologije .kutije{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kutije{
+    flex: 0 0 33%;
+    padding: 0em 1em 0em 1em;
+    text-align: center;
+}
+
+footer{
+    /* min-height: 5em; */
+    max-height: 5em;
+    padding: 2rem;
+    text-align: center;
+    background-color: #e8491d;
+    text-align: center;
+    color: white;
+    margin-top: auto;
+}
+
+
+/* --------------------------------------------------------- */
+
+.obama{
+    height: 100%;
+    overflow: hidden;
+}
+
+.obama .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.obama > .container >.text{
+    flex: 0 0 70%;
+}
+
+.obama aside{
+    display: inline-flex;
+    background-color: #35424a;
+    flex: 0 0 30%;
+    height: 22em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* text-align: center; */
+    padding: 1em 1em 1em 1em;
+    margin-top: 2.3em;
+}
+
+/* -------------------------------------------------------------- */
+
+
+.obama > .container >.text > ul{
+    list-style-type: none;
+}
+
+.obama > .container >.text > ul >li{
+    background-color: #e6e6e6;
+    border: 1px solid darkgrey;
+    margin: 1em;
+}
+
+aside input,
+aside textarea{
+    width: 90%;
+    padding: 0.3rem;
+    margin: 0.4rem;
+}
+
+#kontakt_aside{
+    padding: 5em 1em 5em 1em;
+}
+
+@media (max-width: 768px) {
+    header .container,
+    #newsletter .container,
+    #boxes .container,
+    #main .container{
+        flex-direction: column;
+    }
+    #newsletter .container{
+        text-align: center;
+    }
+
+    #newsletter input [type="email"]
+    {
+        width:9rem;
+    }
 }
